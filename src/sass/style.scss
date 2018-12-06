@@ -1,0 +1,52 @@
+﻿@charset 'UTF-8';
+
+/* ===========================================================
+*
+* Authors: 	Luke Gibson
+* Company:  Luke Gibson Front End Developer
+*
+=========================================================== */
+
+
+@import 'settings/_global';
+
+@import 'tools/_mixins';
+
+
+@import 'generic/_reset';
+
+@import 'base/_text',
+		'base/_headings',
+		'base/_anchor',
+		'base/_button',
+		'base/_lists', 
+		'base/_table',
+		'base/_forms';
+ 
+@import 'objects/_forms', 
+		'objects/_media',
+		'objects/_page-components',
+		'objects/_page',
+		'objects/_section',
+		'objects/_table',
+		'objects/_wrap';
+
+@import 'lib/_slick',
+		'lib/_selectric',
+        'lib/_magnific-popup.scss';
+
+@import 'components/_banner',
+		'components/_buttons',
+		'components/_carousel',
+		'components/_contact',
+		'components/_footer',
+		'components/_header',
+		'components/_nav',
+		'components/_sitemap',
+		'components/_social';
+
+@import 'utility/_overrides',
+		'utility/_hide',
+		'utility/_spacers';
+
+@import 'trumps/_free-content';

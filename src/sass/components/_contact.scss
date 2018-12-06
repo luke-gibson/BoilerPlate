@@ -1,0 +1,36 @@
+﻿/* ===========================================================
+
+	# Carousel
+
+=========================================================== */
+
+.c-contact {
+    &__left {
+        width: 45%;
+        float: left;
+        margin-right: 5%;
+    }
+
+    &__right {
+        width: 45%;
+        float: left;
+        margin-left: 5%;
+    }
+}
+
+@include respond-max($mq-medium) {
+    .c-contact {
+        &__left {
+            width: 100%;
+            float: none;
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+
+        &__right {
+            width: 100%;
+            float: none;
+            margin-left: 0;
+        }
+    }
+}

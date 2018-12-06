@@ -1,0 +1,130 @@
+/* ===========================================================
+
+	# Footer
+
+=========================================================== */
+
+.c-footer {
+    &__top {
+        background-color: rgba($pri, .7);
+        color: $white;
+        text-shadow: 0 0 1rem rgba($black, .3);
+
+        h2 {
+            color: $white;
+            text-shadow: 0 0 1rem rgba($black, .3);
+        }
+
+        input {
+            &[type="email"] {
+                width: 60%;
+                float: left;
+                border-color: $pri;
+                color: $white;
+                background-color: rgba($white, .1);
+                height: 4.6rem;
+            }
+        }
+
+        button {
+            width: 40%;
+            float: left;
+            background-color: $pri;
+            color: $white;
+            border-color: $pri;
+            height: 4.6rem;
+        }
+    }
+
+    &__bottom {
+        background-color: $pri;
+        position: relative;
+        padding-top: 4rem;
+
+        &--contact {
+            a {
+                color: $white;
+                font-weight: 100;
+                transition: color $ease $speed;
+
+                &:hover,
+                &:focus {
+                    color: $sec;
+                }
+            }
+
+            p {
+                color: $white;
+                font-family: $font-family-sec;
+                margin: 0;
+            }
+        }
+
+        .c-footer__nav {
+            &--list {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            &--item {
+                display: inline-block;
+            }
+
+            &--link {
+                color: $white;
+                transition: color $ease $speed;
+
+                &:hover,
+                &:focus {
+                    color: $sec;
+                }
+            }
+
+            .is-active {
+                color: $sec;
+            }
+        }
+    }
+
+    &__LukeGibsonFrontEndDeveloper {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        opacity: .6;
+        transition: opacity $ease $speed;
+        font-size: 1.2rem;
+
+        a {
+            color: $white;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+}
+
+@include respond-max($mq-medium) {
+
+    .c-footer {
+        &__bottom {
+            padding-top: 0rem;
+
+            .c-footer__nav {
+                display: none;
+            }
+        }
+
+
+        &__LukeGibsonFrontEndDeveloper {
+            display: block;
+            position: static;
+            text-align: center;
+            margin: -1.5rem auto 0 auto;
+            padding-bottom: 1rem;
+            opacity: .9;
+        }
+    }
+}
