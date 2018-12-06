@@ -5,67 +5,10 @@
 =========================================================== */
 
 .c-banner {
-
-}
-
-.c-banner__image--wrap {
-    position: relative;
-    overflow: hidden;
-    max-height: 70vh;
+    display: block;
     width: 100%;
 
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,0.1);
-        background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.1)), color-stop(100%, rgba(0,0,0,0.7)));
-        background: -webkit-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
-        background: -o-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
-        background: -ms-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
-        background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
-    }
-}
-
-.c-banner__image {
-    position: relative;
-}
-
-.c-banner__caption {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    text-align: center;
-    z-index: 1;
-
-    h1 {
-        color: $white;
-        text-shadow: 0 0 1rem rgba($black, .5);
-    }
-
-    div {
-        color: $white;
-        font-size: 2.5rem;
-        text-shadow: 0 0 1rem rgba($black, .3);
-        line-height: $line-height;
-    }
-}
-
-@include respond-max($mq-medium) {
-    .c-banner__image--wrap {
-        max-height: 80vh;
-    }
-
-    .c-banner__caption {
-        div {
-            font-size: 2rem;
-        }
+    &__image {
+        width: 100%;
     }
 }
