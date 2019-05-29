@@ -11,12 +11,15 @@
     border-bottom: .3rem solid $pri;
 
     &__logo {
-        width: 100%;
-        max-width: 8rem;
+        width: 35%;
         float: left;
-    }
 
-    &__nav {
-        float: right;
+        span {
+            color: $ter;
+            font-weight: bold;
+            font-size: 4rem;
+            margin-top: .5rem;
+            display: block;
+        }
     }
 }

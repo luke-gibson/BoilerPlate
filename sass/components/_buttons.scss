@@ -8,6 +8,7 @@
 	border-radius: $border-radius;
 	display: block;
 	line-height: 1;
+	margin-top: $line-height;
 	text-align: center;
 	padding: 1.5rem 2rem;
 	transition: background $speed $ease,
@@ -36,10 +37,9 @@
 }
 
 .c-button--primary {
-    background-color: transparent;
+    background-color: $pri;
     color: $white;
-    border: $border-width solid $white;
-    font-size: 2rem;
+    border: $border-width solid $pri;
     font-weight: bold;
     letter-spacing: .05rem;
 
